@@ -15,12 +15,19 @@ button{
   margin-left: 65%;
 }
 
+form {
+  width: 280px;
+  margin: 10px auto 0;
+  text-align: left;
+  display: inline-block;
+}
+
 fieldset{
   border: none;
   margin-top: 0.8em;
 }
 #albums:focus,
-#textarea:focus,
+#song:focus,
 input[type=text]:focus,
 input[type=email]:focus,
 button:focus{
@@ -34,12 +41,29 @@ button:focus{
   border: none;
 }
 
+/*
 legend{
   margin-bottom: 0.8em;
 }
+*/
 
-.hidden{
-  display: none;
+legend {
+    padding-top: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #781125;
+    font-weight: bold;
+}
+
+.header-label {
+  display: block;
+  margin: 20px 0 5px;
+}
+
+.offscreen {
+   position: absolute;
+   left: -200em;
+   top: -20em;
 }
 
 .container{

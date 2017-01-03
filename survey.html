@@ -24,23 +24,20 @@
     </header>
 
     <main>
-      <form method="post">
-        <h1 class="heading">Survey</h1>
+      <fieldset class="survey">
+        <label class="heading">Survey</label>
         <div class="card">
           <div class="flex">
             <img class="photo" src= "img/concert01.jpg" alt="People in a concert with the illuminated stage in the background.">
             <div>
-              <fieldset class="survey">
-                <fieldset>
-                  <legend>Who is your favorite band member:</legend>
+              <form method="post">
+                    <label class="header-label">Who is your favorite band member:</label>
                     <input type="radio" name="res" value="John" id="John"><label for="John">John</label>
                     <input type="radio" name="res" value="Hazzard" id="Hazzard"> <label for="Hazzard">Hazzard</label>
                     <input type="radio" name="res" value="Bob" id="Bob"><label for="Bob">Bob</label>
                     <input type="radio" name="res" value="Sally" id="Sally"><label for="Sally">Sally</label>
-                </fieldset>
-                <fieldset>
-                  <legend id="favoriteAlbum">What is your favorite album:</legend>
-                    <label for="albums" class="hidden">choose</label>
+
+                    <label class="header-label" for="albums">What is your favorite album:</label>
                     <select id="albums" name="select">
                       <option value="1">A Day Of Old</option>
                       <option value="2">Diamond Fireworks</option>
@@ -54,31 +51,35 @@
                       <option value="10">Street Of The Rider</option>
                       <option value="11">This Is For You</option>
                   </select>
-                </fieldset>
-                <fieldset>
-                  <legend>What is your favorite song:</legend>
-                    <label for="textarea" class="hidden">textarea</label>
-                    <textarea id="textarea"></textarea>
-                </fieldset>
-              </fieldset>
+
+                    <label class="header-label" for="song">What is your favorite song:</label>
+                    <textarea id="song"></textarea>
+                </form>
+           
             </div>
           </div>
         </div>
-        <h1 class="heading">Newsletter</h1>
+      </fieldset>
+      <fieldset>
+       <legend class="heading">Newsletter</legend>  
         <div class="card">
           <div class="flex">
             <img class="photo" src= "img/the_band.jpg" alt="a guitarist and a drummer on stage">
               <div class="container">
-                <fieldset class="newsletter">
-                    <label for="name">Name: <input type ="text" name="textfield" id="name"></label>
-                    <label for="email">Email: <input type ="email" name="textfield" id="email"></label>
-                    <label for="retypeEmail">Retype Email: <input type ="email" name="textfield" id="retypeEmail"></label>
-                    <button type="submit">Sign Up</button>
-                </fieldset>
+                  <form class="newsletter">
+                      <label for="name">Name: </label><input type ="text" name="textfield" id="name">
+                      <p class="offscreen" id="input-name">Enter your name.</p>
+                      <label for="email">Email: </label><input type ="email" name="textfield" id="email">
+                      <p class="offscreen" id="input-password">Enter your password.</p>
+                      <label for="retype-email">Retype Email: </label><input type ="email" name="textfield" id="retype-email">
+                      <p class="offscreen" id="input-password-confirm">Enter your password again.</p>
+                      <button type="submit">Sign Up</button>
+                      <p class="offscreen" id="submit"> Clicking this button will sign you up for the Newsletter.</p>
+                  </form>
               </div>
           </div>
         </div>
-      </form>
+       </fieldset>  
     </main>
 
     <footer>
